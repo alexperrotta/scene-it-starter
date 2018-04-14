@@ -14,3 +14,12 @@ body {
 	margin-top: 20px;
 }
 
+
+.movies-container {
+	display: flex;
+}
+
+.card {
+	float: left;
+	margin: 10px;
+}
