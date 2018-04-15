@@ -23,7 +23,7 @@ var movieData = [
 		Poster:
 			"https://ia.media-imdb.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_SX300.jpg"
 	},
-	{
+	 {
 		Title: "Transformers: Dark of the Moon",
 		Year: "2011",
 		imdbID: "tt1399103",
@@ -79,4 +79,4 @@ var movieData = [
 		Poster:
 			"https://ia.media-imdb.com/images/M/MV5BMTcxNDE1OTgyOF5BMl5BanBnXkFtZTcwMTEyMzMxOQ@@._V1_SX300.jpg"
 	}
-];
+]; 

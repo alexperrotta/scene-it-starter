@@ -1,17 +1,21 @@
 $(function(){
 
-	var testHTML = renderMovies(movieData);
-	$(.movies-container).html(testHTML);
+	$('form').on('submit', function(e){
+		e.preventDefault();
+		var finalHTML = renderMovies(movieData);
+		$('.movies-container').html(finalHTML);
+	});
+
 
 	function renderMovies(movieArray) {
 		var finalHTML = "";
 		movieArray.forEach(function(currentMovie){
-			finalHTML += '<div class="card" style="width: 18rem;">';
-			finalHTML += '<img class="card-img-top" src="currentMovie.poster" alt="Movie Poster">';
+			finalHTML += '<div class="card style="width: 18rem";>';
+			finalHTML += '<img class="card-img-top" src="' + currentMovie.Poster + '" alt="Movie Poster">';
 			finalHTML += '<div class="card-body">';
-			finalHTML += '<h5 class="card-title">'+ currentMovie.title +'</h5>';
-			finalHTML += '<p class="card-text">'+ currentMovie.year +'</p>';
-			finalHTML += '<a class="btn btn-primary>'Add'</a>';
+			finalHTML += '<h5 class="card-title">'+ currentMovie.Title +'</h5>';
+			finalHTML += '<p class="card-text">'+ currentMovie.Year +'</p>';
+			finalHTML += '<button class="btn btn-primary">Add</button>';
 			finalHTML += '</div>';
 			finalHTML += '</div>';
 		});
