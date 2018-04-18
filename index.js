@@ -26,9 +26,11 @@ $(function(){
 	// Setting up the click listener on the movies
 	$('.movies-container').on('click', 'button', function(){
 		var imdbID = $(this).data('id');
-		console.log(imdbID);
+		$(this).html('Added');
+		$(this).toggleClass('btn-success');
+		
+		
 		var movie = movieData.find(function(currentMovie){
-			console.log(currentMovie);
 			return currentMovie.imdbID == imdbID;	
 	});
 
@@ -43,6 +45,7 @@ $(function(){
 		localStorage.setItem('watchlist', watchlistJSON);
 		});
 
+	
 
 });
 
