@@ -2,6 +2,10 @@ $(function(){
 
 	$('form').on('submit', function(e){
 		e.preventDefault();
+
+		var searchString = $('.search-bar').val();
+		var urlEncodedSearchString = encodeURIComponent(searchString);
+
 		var finalHTML = renderMovies(movieData);
 		$('.movies-container').html(finalHTML);
 	});
