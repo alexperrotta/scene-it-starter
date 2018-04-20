@@ -5,9 +5,17 @@ $(function(){
 
 		var searchString = $('.search-bar').val();
 		var urlEncodedSearchString = encodeURIComponent(searchString);
+		$.ajax({
+			url: "http://www.omdbapi.com/?apikey=3430a78&s=" + urlEncodedSearchString,
+			method: "GET",
+			success: function(response){
+				movieData = response.Search;
+				var finalHTML = renderMovies(response.Search);
+				$('.movies-container').html(finalHTML);
+			}
+		});
 
-		var finalHTML = renderMovies(movieData);
-		$('.movies-container').html(finalHTML);
+		
 	});
 
 
