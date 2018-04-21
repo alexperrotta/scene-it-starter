@@ -20,7 +20,7 @@ $(function(){
 			finalHTML += '<div class="card-body">';
 			finalHTML += '<h5 class="card-title">'+ currentMovie.Title +'</h5>';
 			finalHTML += '<p class="card-text">'+ currentMovie.Year +'</p>';
-			finalHTML += '<button data-id="'+ currentMovie.imdbID +'" class="btn btn-danger">Already watched this</button>';
+			finalHTML += '<button data-id="'+ currentMovie.imdbID +'" class="btn btn-danger">Remove</button>';
 			finalHTML += '</div>';
 			finalHTML += '</div>';
 		});

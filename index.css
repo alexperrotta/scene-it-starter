@@ -28,7 +28,11 @@ body {
 .card {
 	float: left;
 	margin: 10px;
-	width: 250px;
+	width: 300px;
 } 
+
+img {
+	height: 400px;
+}
 
 
