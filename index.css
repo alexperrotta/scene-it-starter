@@ -1,13 +1,17 @@
 body {
-	background-color: #B2E9FD;
+	background-color: #88B9C3;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
 }
 
-.header h2 {
-	color: #DC4247;
+.display-2 {
+	color: #2D3244;
+	font-family: 'Passion One', serif;
+	font-size: 130px;
 }
 
-.header p {
-	color: #50524F;
+.col-12 {
+	margin-top: 30px;
 }
 
 .results {
